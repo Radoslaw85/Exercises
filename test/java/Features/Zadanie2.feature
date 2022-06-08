@@ -10,5 +10,3 @@ Feature: Shopping
     Then user will confirm address and click on SHIPPING METHOD and will choose PrestaShop
     And user will click on PAYMENT tab and will choose Pay by Check method and click on order with an obligation to pay
     And Browser will be closed
-    And user will check order details
-    And user will check if order have status Awaiting check payment

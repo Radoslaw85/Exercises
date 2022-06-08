@@ -45,28 +45,8 @@ public class Zadanie1Glowny {
         fields.addedData(alias,address,city, postal_code, country, phone);
     }
 
-
-    @Then("New address will be created")
-    public void newAddress(String expectedText) {
-        check check = new check(driver);
-        check.terminator();
-        System.out.println(expectedText);
-    }
-
-
-    @And("User will check if all added date are correct")
-    public void CheckAddedDate() {
-    }
-
-    @And("User will remove added address and check if its deleted")
-    public void RemoveData() {
-        delete delete = new delete(driver);
-        delete.deleteAddress();
-    }
-
-
     @And("Browser is closed")
     public void browserIsClosed() {
- //       driver.quit();
+        driver.quit();
     }
 }

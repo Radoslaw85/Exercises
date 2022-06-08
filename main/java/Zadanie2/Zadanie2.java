@@ -68,17 +68,8 @@ public class Zadanie2 {
             payment.pay();
     }
 
-    @And("user will check order details")
-    public void OrderDetails() {
-            orderDetails orderDetails = new orderDetails(driver);
-            orderDetails.details();
-    }
-
-    @And("user will check if order have status Awaiting check payment")
-    public void Status() {
-    }
-
     @And("Browser will be closed")
     public void browserClosed() {
+            driver.quit();
     }
 }
